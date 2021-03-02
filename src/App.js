@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom'
 import Home from './components/Home';
+import About from './components/About';
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
           </ul>
         </nav>
         <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
       </BrowserRouter>
     );
   }
