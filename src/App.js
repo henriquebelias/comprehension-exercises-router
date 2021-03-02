@@ -22,7 +22,9 @@ class App extends Component {
           <Route path="/users/:id" render={(props) => <Users {...props} greetingMessage="Good Morning" />} />
           <Route path="/about" component={About} />
           <Route exact path="/" component={Home} />
-          <Route path="/strict-access" render={(props) => <StrictAccess {...props} user={{username: "joao", password: "1234"}} />} />
+          <Route
+            path="/strict-access"
+            render={(props) => <StrictAccess {...props} user={{username: "joao", password: "1234"}} />} />
         </Switch>
       </BrowserRouter>
     );
