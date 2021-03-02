@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom'
+import { BrowserRouter, Link, Route } from 'react-router-dom'
 import Home from './components/Home';
 import './App.css';
 
@@ -14,7 +14,7 @@ class App extends Component {
             <li><Link to="/users">Users</Link></li>
           </ul>
         </nav>
-        <Home />
+        <Route exact path="/" component={Home} />
       </BrowserRouter>
     );
   }
